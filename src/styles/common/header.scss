@@ -1,0 +1,25 @@
+.header__wrapper {
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #09161f 100%);
+    overflow: hidden;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px 50px 10px;
+}
+
+.header__nav {
+    order: 2;
+}
+
+.header__container {
+    width: 500px;
+    margin-top: 100px;
+    margin-right: 100px;
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $text-color;
+    text-align: center;
+}

@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Fira Code", Consolas, monospace;
+    line-height: 1.5;
+    background-color: #26394e;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    position: relative;
+    z-index: 10;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-title {
+    width: 469px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 300;
+    font-size: 35px;
+}
+
+.main-title__part {
+    display: block;
+    background: linear-gradient(white, #294f18);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.wrapper-margin {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.image--desctop {
+    display: block;
+    width: 1072px;
+    height: 476px;
+    margin: 0 auto;
+}
+
+.image--mobile {
+    width: 150px;
+    height: auto;
+}
+
+.image--laptop {
+    width: 472px;
+    height: auto;
+}
+
+.skills {
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #09161f 100%);
+    overflow: hidden;
+}
+
+.skill {
+    position: relative;
+}

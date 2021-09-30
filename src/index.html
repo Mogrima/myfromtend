@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/site.webmanifest">
+  <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#340bab">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__wrapper">
+      <div class="stars"></div>
+      <div class="stars2"></div>
+      <div class="stars3"></div>
+      <div class="header__top">
+        <a href="index.html" class="logo header__logo"><span class="visually-hidden">Mogrima</span>
+          <img src="./img/logo.png" alt="Mogrima" width="350" height="394"></a>
+        <!-- <div class="container"> -->
+          <div class="header__container">
+          <h1 class="main-title">
+            <span class="main-title__part">
+              Hi there
+            </span>
+            <span class="main-title__part">
+              I am Mogrima
+            </span>
+          </h1>
+            <p class="about__text">Добро пожаловать на мой сайт.<br> Я веб-разработчик, в своих проектах использую разнообразные современнные (и не очень) технолгии. </p>
+          </div>
+          <nav class="nav header__nav">
+            <!-- <button class="header__nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button> -->
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav_link" href="">
+                  <strong>Home</strong>
+                  <small>sweet home</small>
+                </a>
+              </li>
+              <li class="nav__item nav__item--portfolio">
+                <a class="nav_link nav_link--active" href="">
+                  <strong>Портфолио</strong>
+                  <small>sweet home</small>
+                </a>
+              </li>
+              <li class="nav__item nav__item--skills">
+                <a class="nav_link" href="">
+                  <strong>Навыки</strong>
+                  <small>sweet home</small>
+                </a>
+              </li>
+              <li class="nav__item nav__item--instruments">
+                <a class="nav_link" href="">
+                  <strong>Инструментарий</strong>
+                  <small>sweet home</small>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav_link" href="">
+                  <strong>Обо мне</strong>
+                  <small>what they say</small>
+                </a>
+              </li>
+              <li class="nav__item nav__item--contact">
+                <a class="nav_link" href="">
+                  <strong>Контакты</strong>
+                  <small>sweet home</small>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      <!-- </div> -->
+      
+    </div>
+  </header>
+  <main>
+    <section class="portfolio">
+      <div class="wrapper">
+        <h2 class="section-title">Портфолио</h2>
+        <ul class="list">
+          <li class="item portfolio__item">
+            <picture class="portfolio__content">
+              <img class="image--desctop" src="./img/project-1.png" width="600" height="476" alt="Многостраничный сайт Врата">
+            </picture>
+            <div class="wrapper-margin">
+              <ul class="stack portfolio__stack">
+                <li class="stack__item">PHP</li>
+                <li class="stack__item">MySQL</li>
+                <li class="stack__item">HTML5</li>
+                <li class="stack__item">CSS3</li>
+                <li class="stack__item">LESS</li>
+                <li class="stack__item">JS</li>
+                <li class="stack__item">GULP</li>
+                <li class="stack__item">VS CODE</li>
+              </ul>
+            </div>
+            <h3 class="section-subtitle">Арт-проект «Врата»</h3>
+            <p class="portfolio__text">Многостраничный сайт, посвященный результатам творческой деятельности. Включает страницы со слайдерами, в котором
+              отображены иллюстрации. Собственная читалка для книг. В ней предусмотрена возможность добавлять закладку 
+              (для авторизованных пользователей). На страницах альбома можно добавить понравившийся рисунок в свою коллекцию.
+              И, разумеется, на сайте есть базовые вещи - как возможность оставлять комментарии, регистрироваться,
+              авторизоваться, редактировать свой профиль, а так же удалять аккаунт.
+            </p>
+            <ol class="task">
+              <li class="task__item task__item--back"><b class="task__item-mark">Backend:</b> Логика сайта написана на <b>PHP 7.1.</b>,
+                 при управлении реляционной базой данных с помощью системы <b>MySQL</b>.
+              Помимо самописного ядра, сейчас разрабатывается админ-панель, чтобы автор рисунков и текстов мог самостоятельно
+              добавлять свои работы: рисунки (название, категории, само изображение и путь до него, установка рейтинга) и принадлежность 
+            к альбому; сам альбом (название, описание, мета-информацию); книги и стихи; новости. </li>
+              <li class="task__item"><b class="task__item-mark">Frontend:</b> Клиентская часть сайта реализована без использования js-фреймворков. <b>HTML5, CSS3 (LESS)</b> и <b>JavaScipt</b>. 
+                Код html регулярно проверяется на валидаторе, с соблюдением семантичности верстки и с учетом доступности сайта для скрин-ридеров.</li>
+              <li class="task__item task__item--desc"><b class="task__item-mark">Описание задачи:</b> Цель состояла в создании полноценного многостраничного сайта без использования CMS, при этом
+              без потери в каком-либо функционале. Сейчас базовые функции для пользователя созданы. Отстутствует возможность ставить
+            подобие лайков, не видно количество просмотров и отстутствует поиск по сайту. Сейчас это в процессе реализации. Самая <i>главная 
+          задача</i>, которая закладывалась - это сделать проект по принципу <b>Graceful Degradation</b>, именно поэтому, например, были сделаны фоллбеки
+        с страницами регистрации и авторизации, если по какой-то причине пользователь не сможет работать с модальными окнами. Или 
+      полноценное функционирование сайта при отключенным js и не подгруженном css (например, отправка форм и просмотр контента).</li>
+              <li class="task__item task__item--result"><b class="task__item-mark">Итоги:</b> Пользователь, заходя на сайт, может: просматривать иллюстрации в слайдере, добавлять их себе
+              в избранное или удалять из них, читать тексты в читалке, оставлять закладку на странице книги, чтобы не потерять место, искать рисунки
+              и книги по заданным фильтрам
+            регистрация, авторизация, удаление профиля, возможность оставлять комментарии, редактировать свой профиль. Есть асинхронность
+          оставления комментариев, которая реализована через jquery (это единственное место, в котором он исполуется). В проекте планируется
+        полный переход на нативный JS.</li>
+            </ol>
+           <div class="portfolio__buttons">
+            <a class="button portfolio__button" href="https://github.com/Mogrima/Gate-3.0" target="_blank">Github</a>
+            <a class="button portfolio__button portfolio__button--gate" href="https://intogate.net/" target="_blank">Site</a>
+           </div>
+          </li>
+          <li class="item portfolio__item">
+            <picture class="portfolio__content">
+              <img class="image--desctop" src="./img/project-1.png" width="600" height="476" alt="Многостраничный сайт Врата">
+            </picture>
+            <div class="wrapper-margin">
+              <ul class="stack portfolio__stack">
+                <li class="stack__item">DJANGO</li>
+                <li class="stack__item">SQLite</li>
+                <li class="stack__item">JINJA</li>
+                <li class="stack__item">CSS3</li>
+                <li class="stack__item">SCSS</li>
+                <li class="stack__item">JAVASCRIPT</li>
+                <li class="stack__item">GULP</li>
+                <li class="stack__item">VS CODE</li>
+              </ul>
+            </div>
+            <h3 class="section-subtitle">Интернет-магазин «Дом лесной Ведьмы»</h3>
+            <p class="portfolio__text">Интернет-магазин колдовских предметов.
+            </p>
+            <ol class="task">
+              <li class="task__item task__item--back"><b class="task__item-mark">Backend:</b> Логика сайта реализована с помощью фреймворка
+                 <b>Django 3.2.</b>, и СУБД <b>SQLite</b>.</li>
+             <li class="task__item"><b class="task__item-mark">Frontend:</b> Встроенный шаблонизатор Джанго</li>
+             <li class="task__item task__item--desc"><b class="task__item-mark">Описание задачи:</b> Написать интернет-магазин.</li>
+             <li class="task__item task__item--result"><b class="task__item-mark">Итоги:</b></li>
+            </ol>
+            <div class="portfolio__buttons">
+              <a class="button portfolio__button" href="https://github.com/Mogrima/Gate-3.0" target="_blank">Github</a>
+              <a class="button portfolio__button portfolio__button--house" href="https://housewitch.ru/" target="_blank">Site</a>
+             </div>
+          </li>
+          <!-- <li class="item portfolio__item">
+            <div>
+              <h3>Чат-бот на питон</h3>
+              <p>
+              </p>
+              <ol>
+                <li><b>Backend:</b></li>
+                <li><b>Описание задачи:</b> </li>
+                <li><b>Итоги:</b></li>
+              </ol>
+              <a href=""></a>
+            </div>
+          </li> -->
+        </ul>
+      </div>
+    </section>
+    <section class="skills">
+      <div class="stars"></div>
+      <div class="stars2"></div>
+      <div class="stars3"></div>
+      <div class="wrapper">
+        <h2>Навыки</h2>
+        <div class="skill">HTML5</div>, JINJA, PUG, CSS3, SCSS, LESS, BOOTSTRAP, Javascript, VUE, Python, Django, PHP, MySQL, Open Server, Webpack,
+        Gulp, Wordpress, Git, Github, Figma, Photoshop, Illustrator
+        <button type="button">Frontent</button>
+        <button type="button">Backend</button>
+        <button type="button">Something</button>
+        <button type="button">Other</button>
+      </div>
+    </section>
+    <section>
+      <div class="wrapper">
+        <h2>Обо мне</h2>
+      </div>
+    </section>
+    <section>
+      <div class="wrapper">
+        <h2>Контакты</h2>
+        <p>Связаться со мной можно, отправив мне письмо, щелкнув по ссылке</p>
+        <a href="mailto:rebel.RS@yandex.ru">Связаться</a>
+        <p>Давайте общаться:</p>
+        <ul>
+          <li><a href="mailto:">Facebook</a></li>
+          <li><a href="mailto:">Github</a></li>
+          <li><a href="mailto:">Вконтакте</a></li>
+          <li><a href="mailto:"></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    © 2021
+    При разботке многих проектов использовался Open Server
+    Этот сайт был создан с помощью таких замечательных инструментов, как Photoshop, 
+    VS Code и Gulp. Шрифт, используемый в заголовках, - Brandon Grotesque, шрифт в основной копии-FF Meta Serif Web Pro.
+    Оба шрифта можно найти в Google Fonts.
+  </footer>
+<script async src="./js/main.min.js"></script>
+</body>
+
+</html>

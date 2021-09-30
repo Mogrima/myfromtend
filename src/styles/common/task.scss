@@ -1,0 +1,57 @@
+.task {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0 20px;
+    list-style: none;
+}
+
+.task__item {
+    position: relative;
+    width: 49%;
+    min-width: 340px;
+    max-width: 683px;
+    margin-bottom: 20px;
+    padding-left: 50px;
+    // text-align: justify;
+
+    &:nth-child(even) {
+        margin-left: auto;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -6px;
+        width: 40px;
+        height: 40px;
+        background-image: url("../img/planet-earth.svg");
+        background-repeat: no-repeat;
+        background-size: 40px 40px;
+    }
+
+    &--back::before {
+        background-image: url("../img/earth.svg");
+        background-repeat: no-repeat;
+        background-size: 40px 40px;
+    }
+
+    &--desc::before {
+        background-image: url("../img/rocket.svg");
+        background-repeat: no-repeat;
+        background-size: 40px 40px;
+    }
+
+    &--result::before {
+        left: 0;
+        background-image: url("../img/space-bus.svg");
+        background-repeat: no-repeat;
+        background-size: 40px 40px;
+    }
+}
+
+.task__item-mark {
+    color: $text-color-dark;
+    background-color: yellow;
+}
