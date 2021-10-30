@@ -14,6 +14,19 @@
         background: rgb(23, 37, 1);
         background: linear-gradient(0deg, rgba(23, 37, 1, 0.9) 0%, rgba(14, 26, 34, 1) 34%, rgba(9, 22, 31, 0) 57%);
     }
+
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        left: 0;
+        bottom: -130px;
+        height: 200px;
+        background: rgb(23, 37, 1);
+        background: linear-gradient(0deg, rgba(23, 37, 1, 0.9) 0%, rgba(14, 26, 34, 1) 34%, rgba(9, 22, 31, 0) 57%);
+        transform: rotate(180deg);
+    }
 }
 
 .portfolio__content {

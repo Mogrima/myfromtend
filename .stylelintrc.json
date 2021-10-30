@@ -23,6 +23,7 @@
     "unit-allowed-list": [
       "ms",
       "s",
+      "deg",
       "em",
       "rem",
       "%",
