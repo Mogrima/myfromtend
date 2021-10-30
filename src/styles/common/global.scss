@@ -15,7 +15,7 @@ html {
     padding: 0;
     width: 100%;
     height: 100%;
-    font-family: "Fira Code", Consolas, monospace;
+    font-family: "Fira Code", "Consolas", monospace;
     line-height: 1.5;
     background-color: #26394e;
 }
@@ -84,8 +84,4 @@ a {
 .skills {
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #09161f 100%);
     overflow: hidden;
-}
-
-.skill {
-    position: relative;
 }

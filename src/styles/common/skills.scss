@@ -1,0 +1,31 @@
+.skills__list {
+    margin: 0;
+    margin-bottom: 50px !important;
+    padding: 0;
+    list-style: none;
+}
+
+.skills__item {
+    text-transform: uppercase;
+}
+
+.skills__buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.skills_button {
+    margin-left: 10px;
+    
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:last-child {
+        // margin-right: -10px;
+    }
+}
+
+.skill {
+    position: relative;
+}
