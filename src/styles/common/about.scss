@@ -1,0 +1,26 @@
+.about {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        left: 0;
+        top: -130px;
+        height: 200px;
+        background: rgb(38, 57, 78);
+        background: linear-gradient(0deg, rgba(38, 57, 78, 0.1) 0%, rgba(14, 26, 34, 1) 34%, rgba(9, 22, 31, 0) 57%);
+    }
+}
+
+.about__image {
+    float: left;
+    // width: 400px;
+    margin-top: 0;
+}
+
+.about__text {
+    padding-right: 100px;
+    color: #fff;
+    // width: 650px;
+}

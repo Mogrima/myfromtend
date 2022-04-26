@@ -227,9 +227,9 @@
         <h2 class="section-title">Обо мне</h2>
         <div class="about__content">
           <figure class="about__image">
-            <img src="./img/Mo.jpg" width="400" height="600"
+            <img src="./img/Mo.png" width="400" height="600"
                  alt="Mogrima">
-            <figcaption class="about__capture">Mogrima</figcaption>
+            <figcaption class="about__capture">I`m</figcaption>
         </figure>
         <p class="about__text">Прежде всего, убеждённость некоторых оппонентов требует анализа направлений прогрессивного развития.
            С другой стороны, сплочённость команды профессионалов играет определяющее значение для поставленных 
@@ -240,26 +240,32 @@
       </div>
     </section>
     <section>
-      <div class="wrapper">
-        <h2>Контакты</h2>
-        <p>Связаться со мной можно, отправив мне письмо, щелкнув по ссылке</p>
-        <a href="mailto:rebel.RS@yandex.ru">Связаться</a>
-        <p>Давайте общаться:</p>
-        <ul>
-          <li><a href="mailto:">Facebook</a></li>
-          <li><a href="mailto:">Github</a></li>
-          <li><a href="mailto:">Вконтакте</a></li>
-          <li><a href="mailto:"></a></li>
+      <div class="wrapper contact__wrapper">
+        <h2 class="section-title contact__title">Контакты</h2>
+        <div class="contact__info">      
+          
+          <p class="text">Связаться со мной можно, отправив мне письмо, щелкнув по ссылке:</p>
+          <a class="button contact__button" href="mailto:rebel.RS@yandex.ru">Связаться</a></div>
+        
+        <b class="text">Давайте общаться:</b>
+        <ul class="contact__list">
+          <li class="contact__item"><a class="contact__link contact__link--github" href="https://github.com/Mogrima" target="_blank">Github</a></li>
+          <li class="contact__item"><a class="contact__link contact__link--telegramm" href="https://t.me/DolgoldurMo" target="_blank">Telegram</a></li>
+          <li class="contact__item"><a class="contact__link contact__link--vk" href="https://vk.com/id50170661" target="_blank">Vk</a></li>
+          <li class="contact__item"><a class="contact__link contact__link--discord" href="https://discord.gg/a3R3VQC5" target="_blank">Discord</a></li>
         </ul>
       </div>
     </section>
   </main>
-  <footer>
-    © 2021
+  <div class="clearfix"></div>
+  <footer class="footer">
+   <div class="wrapper footer__wrapper">
+    <p class="footer__copyright">© 2021 by Mogrima</p> 
     При разботке многих проектов использовался Open Server
     Этот сайт был создан с помощью таких замечательных инструментов, как Photoshop, 
     VS Code и Gulp. Шрифт, используемый в заголовках, - Brandon Grotesque, шрифт в основной копии-FF Meta Serif Web Pro.
     Оба шрифта можно найти в Google Fonts.
+   </div>
   </footer>
 <script async src="./js/main.min.js"></script>
 </body>

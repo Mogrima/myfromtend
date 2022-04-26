@@ -85,3 +85,19 @@ a {
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #09161f 100%);
     overflow: hidden;
 }
+
+/* clearfix */
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+
+.text {
+    display: block;
+}
