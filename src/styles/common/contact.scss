@@ -1,30 +1,42 @@
 .contact__wrapper {
     padding-top: 0;
+    margin-bottom: 50px;
     color: #fff;
 }
 
 .contact__title {
     margin-bottom: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 .contact__info {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.contact__text {
+    text-align: center;
 }
 
 .contact__button {
     position: static;
-    display: inline-block;
+    display: block;
+    width: 140px;
+    margin: 0 auto;
+}
+
+.contact__subtitle {
+    padding-left: 20px;
 }
 
 .contact__list {
     list-style: none;
     display: flex;
-    padding: 0;
+    padding: 0 20px;
 }
 
 .contact__item {
     margin-right: 30px;
+    margin-bottom: 30px;
 }
 
 .contact__link {
@@ -65,5 +77,47 @@
     &--discord::before {
         background-image: url("../../img/discord.png");
         background-size: contain;
+    }
+}
+
+@media(max-width: $mediaWidthTablet) {
+    .contact__list {
+        flex-wrap: wrap;
+    }
+}
+
+@media(min-width: $mediaWidthTabletHorizontal) {
+
+    .contact__wrapper {
+        margin-bottom: 0;
+    }
+
+    .contact__title {
+        text-align: left;
+    }
+
+    .contact__info {
+        margin-bottom: 20px;
+    }
+
+    .contact__text {
+        text-align: left;
+    }
+
+    .contact__subtitle {
+        padding-left: 0;
+    }
+
+    .contact__list {
+        padding: 0;
+    }
+
+    .contact__button {
+        display: inline-block;
+        margin: 0;
+    }
+
+    .contact__item {
+        margin-bottom: 0;
     }
 }

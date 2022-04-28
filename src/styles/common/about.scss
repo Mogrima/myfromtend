@@ -1,4 +1,5 @@
 .about__wrapper {
+    margin-bottom: 50px;
     padding-top: 70px;
 }
 
@@ -42,11 +43,14 @@
 
 @media(min-width: $mediaWidthTabletHorizontal) {
 
-    
+    .about__wrapper {
+        margin-bottom: 0;
+    }
+
     .about__image {
         float: left;
         width: 400px;
-        height: 600px;
+        height: 500px;
         margin: 0;
     }
     
