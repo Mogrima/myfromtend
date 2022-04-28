@@ -29,6 +29,15 @@ a {
     text-decoration: none;
 }
 
+.wrapper {
+    position: relative;
+    z-index: 10;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+}
+
 .logo {
     display: block;
     width: 250px;
@@ -71,15 +80,11 @@ a {
 
 @media(min-width: $mediaWidthTabletHorizontal) {
 .wrapper {
-    position: relative;
-    z-index: 10;
     padding-top: 50px;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 50px;
 }
-
-
 
 .main-title {
     width: 469px;
