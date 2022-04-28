@@ -44,6 +44,31 @@ a {
     text-align: center;
 }
 
+.image--desctop {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@media(min-width: 468px) {
+    .image--desctop {
+        width: 400px;
+    }
+}
+
+@media(min-width: $mediaWidthTablet) {
+    .image--desctop {
+        width: 700px;
+    }
+}
+
 @media(min-width: $mediaWidthTabletHorizontal) {
 .wrapper {
     position: relative;
@@ -54,11 +79,7 @@ a {
     padding-bottom: 50px;
 }
 
-.list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+
 
 .main-title {
     width: 469px;
@@ -88,10 +109,8 @@ a {
 }
 
 .image--desctop {
-    display: block;
     width: 1072px;
     height: 476px;
-    margin: 0 auto;
 }
 
 .image--mobile {

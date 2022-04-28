@@ -29,6 +29,10 @@
     }
 }
 
+.portfolio__wrapper {
+    padding-top: 70px;
+}
+
 .portfolio__content {
     display: block;
     margin-bottom: 25px;
@@ -55,7 +59,8 @@
 .portfolio__buttons {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    // justify-content: space-between;
     width: 300px;
     height: 55px;
     margin: 0 auto;
@@ -94,5 +99,34 @@
     &--house::before {
         background-image: url("../img/house-logo.png");
         background-size: 30px 30px;
+    }
+}
+
+@media(max-width: $mediaWidthTablet) {
+
+}
+
+@media(min-width: $mediaWidthTabletHorizontal) {
+    .portfolio__wrapper {
+        padding-top: 0;
+    }
+
+    .portfolio__buttons {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        height: 55px;
+        margin: 0 auto;
+        margin-top: 35px;
+        overflow: hidden;
+        
+    }
+}
+
+@media(min-width: $mediaWidthLarge) {
+    .portfolio__wrapper {
+        width: 1366px;
+        margin: 0 auto;
     }
 }
